@@ -16,8 +16,8 @@ body {
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
-    width: 90%;
+    max-width: 900px; /* Aumentei a largura máxima do container para dar mais espaço */
+    width: 95%; /* O container ocupa mais largura */
 }
 
 h1, h2, p {
@@ -25,7 +25,7 @@ h1, h2, p {
 }
 
 .section {
-    margin-bottom: 30px;
+    margin-bottom: 40px; /* Aumentei a margem inferior para mais espaço entre as seções */
     padding: 20px;
     border: 1px solid #c8e6c9;
     border-radius: 5px;
@@ -38,22 +38,29 @@ h1, h2, p {
 }
 
 img {
-    max-width: 100%;
+    max-width: 80%; /* Permite que as imagens ocupem até 80% da largura do container */
     height: auto;
-    border-radius: 5px;
-    margin: 10px auto; /* Centraliza imagens como blocos */
+    border-radius: 8px; /* Bordas mais arredondadas */
+    margin: 20px auto; /* Aumentei as margens superior e inferior para mais destaque */
     display: block; /* Garante que a margem auto funcione para centralizar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Adiciona uma leve sombra para dar mais destaque */
 }
 
 .image-container {
     text-align: center; /* Centraliza imagens inline dentro do container */
+    margin-top: 20px; /* Adiciona mais espaço acima do container de imagens */
+    margin-bottom: 20px; /* Adiciona mais espaço abaixo do container de imagens */
 }
 
 .image-container img {
     display: inline-block;
-    margin: 10px;
+    margin: 15px; /* Aumentei a margem entre as imagens */
+    max-width: 45%; /* Permite que duas imagens lado a lado tenham um tamanho razoável */
+    height: auto;
+    border-radius: 8px; /* Bordas mais arredondadas */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra */
 }
 
 .text-block {
     text-align: center;
-}   
+}
