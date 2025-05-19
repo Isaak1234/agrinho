@@ -22,23 +22,27 @@
             padding: 30px;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            max-width: 800px;
-            width: 90%;
+            max-width: 900px; /* Aumentei a largura máxima do container */
+            width: 95%; /* O container ocupa mais largura */
         }
         h1 {
             color: #1976d2; /* Azul mais escuro para o título principal */
+            margin-bottom: 25px; /* Mais espaço abaixo do título */
         }
         h2 {
             color: #388e3c; /* Verde mais escuro para os subtítulos */
+            margin-top: 25px; /* Mais espaço acima dos subtítulos */
+            margin-bottom: 15px; /* Mais espaço abaixo dos subtítulos */
         }
         p {
             color: #43a047; /* Verde um pouco mais claro para os parágrafos */
+            margin-bottom: 15px; /* Mais espaço abaixo dos parágrafos */
         }
         .section {
-            margin-bottom: 30px;
-            padding: 20px;
+            margin-bottom: 40px; /* Mais espaço entre as seções */
+            padding: 25px; /* Mais espaço interno nas seções */
             border: 1px solid #81c784; /* Verde claro para a borda da seção */
-            border-radius: 5px;
+            border-radius: 8px; /* Bordas mais arredondadas */
             background-color: #c8e6c9; /* Verde claro para o fundo da seção */
         }
         .emphasis {
@@ -46,25 +50,41 @@
             color: #1565c0; /* Azul escuro para destacar */
         }
         img {
-            max-width: 100%;
+            max-width: 80%; /* Imagens podem ocupar até 80% da largura do container */
             height: auto;
-            border-radius: 5px;
-            margin: 10px auto;
+            border-radius: 8px; /* Bordas mais arredondadas nas imagens */
+            margin: 20px auto; /* Mais margem para destacar as imagens */
             display: block;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Adiciona uma leve sombra nas imagens */
         }
         .image-container {
             text-align: center;
+            margin-top: 20px; /* Mais espaço acima do container de imagens */
+            margin-bottom: 20px; /* Mais espaço abaixo do container de imagens */
         }
         .image-container img {
             display: inline-block;
-            margin: 10px;
-            border: 2px solid #66bb6a; /* Borda verde nas imagens do container */
-            padding: 5px;
-            border-radius: 5px;
+            margin: 15px; /* Mais margem entre as imagens no container */
+            border: 3px solid #66bb6a; /* Borda verde mais grossa nas imagens do container */
+            padding: 8px; /* Mais padding dentro da borda da imagem */
+            border-radius: 8px; /* Bordas mais arredondadas nas imagens do container */
+            max-width: 45%; /* Permite que duas imagens lado a lado tenham um tamanho razoável */
+            height: auto;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Leve sombra nas imagens do container */
         }
         .text-block {
             text-align: center;
             color: #2e7d32; /* Verde escuro para blocos de texto específicos */
+            margin-top: 20px; /* Mais espaço acima dos blocos de texto */
+        }
+        ul {
+            list-style-type: disc;
+            text-align: left;
+            margin: 15px 0; /* Mais margem para as listas */
+            padding-left: 25px; /* Mais espaço à esquerda da lista */
+        }
+        li {
+            margin-bottom: 8px; /* Mais espaço entre os itens da lista */
         }
     </style>
 </head>
@@ -75,13 +95,26 @@
 
         <div class="section">
             <h2>Agricultura de Precisão: Cultivando com Inteligência</h2>
-            <p>A <span class="emphasis">agricultura de precisão</span> otimiza o uso de recursos com tecnologias avançadas.</p>
+            <p>A <span class="emphasis">agricultura de precisão</span> utiliza tecnologias avançadas para otimizar o uso de recursos, monitorar lavouras e aumentar a eficiência. Exemplos incluem:</p>
+            <ul>
+                <li><span class="emphasis">GPS e SIG (Sistemas de Informação Geográfica):</span> Para mapeamento detalhado das propriedades e georreferenciamento de dados.</li>
+                <li><span class="emphasis">Sensores Agrícolas:</span> Instalados no solo ou em máquinas para coletar dados sobre umidade, temperatura, nutrientes e saúde das plantas.</li>
+                <li><span class="emphasis">Taxa Variável:</span> Aplicação precisa de insumos (fertilizantes, sementes, defensivos) com base em dados de variabilidade do solo e da lavoura.</li>
+                <li><span class="emphasis">Drones:</span> Captura de imagens aéreas de alta resolução para análise da saúde das plantas, detecção de pragas, monitoramento de irrigação e mapeamento.</li>
+                <li><span class="emphasis">Softwares de Gestão Agrícola:</span> Plataformas para integrar e analisar dados, auxiliando na tomada de decisões.</li>
+            </ul>
             <img src="precisao.png" alt="Agricultura de Precisão">
         </div>
 
         <div class="section">
             <h2>Monitoramento e Sensoriamento Remoto: Olhos no Céu e na Terra</h2>
-            <p><span class="emphasis">Drones e satélites</span> oferecem visões detalhadas para decisões mais assertivas no campo.</p>
+            <p><span class="emphasis">Drones e satélites</span> oferecem visões detalhadas das plantações, permitindo o acompanhamento da saúde das culturas e a identificação de problemas em larga escala. As tecnologias incluem:</p>
+            <ul>
+                <li><span class="emphasis">Imagens Multiespectrais e Hiperespectrais:</span> Capturam informações em diferentes faixas do espectro eletromagnético para avaliar a saúde da vegetação, identificar estresse hídrico e deficiências nutricionais.</li>
+                <li><span class="emphasis">NDVI (Índice de Vegetação da Diferença Normalizada) e outros índices de vegetação:</span> Indicadores da biomassa e do vigor das plantas.</li>
+                <li><span class="emphasis">Geoprocessamento:</span> Análise e interpretação de dados georreferenciados para criar mapas temáticos e identificar padrões espaciais.</li>
+                <li><span class="emphasis">Estações Meteorológicas Inteligentes:</span> Coleta de dados climáticos precisos para auxiliar na irrigação e no planejamento de atividades.</li>
+            </ul>
             <div class="image-container">
                 <img src="drone.png" alt="Drones na Agricultura">
                 <img src="satelite.png" alt="Satélites Agrícolas">
@@ -90,7 +123,14 @@
 
         <div class="section">
             <h2>Automação e Robótica: O Trabalho Inteligente no Campo</h2>
-            <p>A <span class="emphasis">automação</span> e a <span class="emphasis">robótica</span> elevam a eficiência nas operações agrícolas.</p>
+            <p>A <span class="emphasis">automação</span> e a <span class="emphasis">robótica</span> estão transformando as operações agrícolas, tornando-as mais eficientes e reduzindo a necessidade de mão de obra. Exemplos incluem:</p>
+            <ul>
+                <li><span class="emphasis">Tratores Autônomos:</span> Veículos capazes de realizar tarefas como plantio, aração e pulverização sem a necessidade de um operador humano.</li>
+                <li><span class="emphasis">Robôs de Colheita:</span> Máquinas projetadas para colher frutas, legumes e outros produtos de forma autônoma e precisa.</li>
+                <li><span class="emphasis">Sistemas de Ordenha Robótica:</span> Automação do processo de ordenha em fazendas leiteiras.</li>
+                <li><span class="emphasis">Robôs para Monitoramento de Culturas:</span> Equipados com sensores e câmeras para inspecionar plantações e coletar dados.</li>
+                <li><span class="emphasis">Pulverizadores Inteligentes:</span> Sistemas que aplicam defensivos de forma seletiva, apenas onde necessário.</li>
+            </ul>
             <div class="image-container">
                 <img src="automacao.png" alt="Automação Agrícola">
                 <img src="robotica agricola.png" alt="Robótica Agrícola">
@@ -99,18 +139,31 @@
 
         <div class="section">
             <h2>Biotecnologia e Melhoramento Genético: A Ciência a Serviço da Produção</h2>
-            <p>A <span class="emphasis">biotecnologia</span> impulsiona culturas mais resistentes e nutritivas.</p>
+            <p>A <span class="emphasis">biotecnologia</span> e o <span class="emphasis">melhoramento genético</span> utilizam técnicas avançadas para desenvolver plantas com características desejáveis, como resistência a pragas, doenças e herbicidas, além de maior produtividade e valor nutricional. Exemplos incluem:</p>
+            <ul>
+                <li><span class="emphasis">Plantas Transgênicas (Organismos Geneticamente Modificados - OGM):</span> Culturas com genes inseridos de outros organismos para conferir características específicas.</li>
+                <li><span class="emphasis">Seleção Genômica Assistida por Marcadores (MAS):</span> Utilização de marcadores de DNA para identificar genes de interesse e acelerar o processo de melhoramento.</li>
+                <li><span class="emphasis">Edição Genética (CRISPR):</span> Técnicas para modificar o DNA das plantas de forma precisa.</li>
+                <li><span class="emphasis">Biofertilizantes:</span> Microrganismos que auxiliam na fixação de nutrientes no solo e promovem o crescimento das plantas.</li>
+                <li><span class="emphasis">Controle Biológico de Pragas:</span> Utilização de organismos vivos para controlar pragas e doenças nas lavouras.</li>
+            </ul>
             <img src="biotecnologia agricola.png" alt="Biotecnologia Agrícola">
         </div>
 
         <div class="section">
             <h2>Software e Gestão de Dados: Informação para Decisões Estratégicas</h2>
-            <p><span class="emphasis">Softwares e big data</span> fornecem insights valiosos para o planejamento agrícola.</p>
+            <p><span class="emphasis">Softwares e big data</span> desempenham um papel crucial na integração e análise de grandes volumes de dados coletados no campo, auxiliando os agricultores na tomada de decisões mais informadas. Incluem:</p>
+            <ul>
+                <li><span class="emphasis">Sistemas de Gestão da Propriedade Rural (SGPR):</span> Plataformas para gerenciar informações sobre plantio, colheita, estoque, finanças e outras atividades.</li>
+                <li><span class="emphasis">Plataformas de Análise de Dados Agrícolas:</span> Ferramentas para processar dados de sensores, drones, satélites e outras fontes, gerando insights sobre a lavoura.</li>
+                <li><span class="emphasis">Previsão do Tempo e Modelos Climáticos:</span> Informações meteorológicas precisas para o planejamento das atividades agrícolas.</li>
+                <li><span class="emphasis">Marketplaces Digitais:</span> Plataformas para conectar produtores a fornecedores e compradores.</li>
+            </ul>
             <img src="software agricola.png" alt="Software de Gestão Agrícola">
         </div>
 
         <h2>Conclusão</h2>
-        <p>A tecnologia e a agricultura juntas moldam um futuro promissor para a produção de alimentos e a sustentabilidade.</p>
+        <p>A tecnologia e a agricultura juntas moldam um futuro promissor para a produção de alimentos e a sustentabilidade, com inovações contínuas que otimizam cada etapa do ciclo agrícola.</p>
     </div>
 </body>
 </html>
