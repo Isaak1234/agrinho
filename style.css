@@ -1,68 +1,128 @@
 body {
-    font-family: sans-serif;
-    line-height: 1.6;
+    font-family: 'Arial', sans-serif; /* Fonte mais comum e legível */
+    line-height: 1.8; /* Aumentei o espaçamento entre linhas para melhor leitura */
     margin: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #e0f2f7; /* Azul bem claro para o fundo */
+    color: #2e7d32; /* Verde escuro para o texto geral */
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start; /* Alinha o conteúdo ao topo para páginas mais longas */
     min-height: 100vh;
+    padding: 30px 0; /* Adiciona padding vertical para o body */
     text-align: center;
 }
 
 .container {
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    max-width: 1000px; /* Aumentei ainda mais a largura máxima do container */
-    width: 95%;
+    background-color: #f1f8e9; /* Verde bem claro para o container */
+    padding: 40px; /* Aumentei o padding interno do container */
+    border-radius: 12px; /* Bordas mais arredondadas */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); /* Sombra mais pronunciada */
+    max-width: 1050px; /* Aumentei a largura máxima do container para mais espaço */
+    width: 90%; /* Ocupa uma boa porcentagem da largura */
+    margin: 0 auto; /* Garante centralização em navegadores mais antigos */
 }
 
-h1, h2, p {
-    text-align: center;
+h1 {
+    color: #1976d2; /* Azul mais escuro para o título principal */
+    margin-bottom: 40px; /* Mais espaço abaixo do título */
+    font-size: 2.8em; /* Título maior e mais impactante */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Sombra leve no texto */
+}
+
+h2 {
+    color: #388e3c; /* Verde mais escuro para os subtítulos */
+    margin-top: 40px; /* Mais espaço acima dos subtítulos */
+    margin-bottom: 25px; /* Mais espaço abaixo dos subtítulos */
+    font-size: 2em; /* Subtítulos maiores */
+    border-bottom: 2px solid #81c784; /* Linha de separação verde */
+    padding-bottom: 10px; /* Espaçamento abaixo da linha */
+    display: inline-block; /* Para a linha de separação se ajustar ao texto */
+}
+
+p {
+    color: #43a047; /* Verde um pouco mais claro para os parágrafos */
+    margin-bottom: 25px; /* Mais espaço abaixo dos parágrafos */
+    font-size: 1.15em; /* Parágrafos um pouco maiores */
+    line-height: 1.7; /* Melhor legibilidade em parágrafos */
+    max-width: 90%; /* Limita a largura do parágrafo para melhor leitura */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .section {
-    margin-bottom: 50px; /* Aumentei ainda mais a margem inferior das seções */
-    padding: 25px;
-    border: 1px solid #c8e6c9;
-    border-radius: 8px; /* Bordas mais arredondadas */
-    background-color: #e8f5e9;
+    margin-bottom: 70px; /* Mais espaço entre as seções */
+    padding: 35px; /* Mais espaço interno nas seções */
+    border: 1px solid #81c784; /* Verde claro para a borda da seção */
+    border-radius: 12px; /* Bordas mais arredondadas */
+    background-color: #c8e6c9; /* Verde claro para o fundo da seção */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); /* Sombra para destacar a seção */
 }
 
 .emphasis {
     font-weight: bold;
-    color: #1976d2;
+    color: #1565c0; /* Azul escuro para destacar */
 }
 
 img {
-    max-width: 90%; /* Permite que as imagens ocupem ainda mais largura */
+    max-width: 95%; /* Imagens podem ocupar quase toda a largura do container */
     height: auto;
-    border-radius: 10px; /* Bordas mais arredondadas */
-    margin: 25px auto; /* Aumentei ainda mais as margens superior e inferior */
+    border-radius: 15px; /* Bordas mais arredondadas nas imagens */
+    margin: 35px auto; /* Mais margem para destacar as imagens */
     display: block;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra um pouco maior */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Sombra maior e mais intensa nas imagens */
+    transition: transform 0.3s ease-in-out; /* Transição suave ao passar o mouse */
+}
+
+img:hover {
+    transform: scale(1.02); /* Leve aumento ao passar o mouse */
 }
 
 .image-container {
     text-align: center;
-    margin-top: 30px; /* Aumentei as margens */
-    margin-bottom: 30px;
+    margin-top: 45px; /* Mais espaço acima do container de imagens */
+    margin-bottom: 45px; /* Mais espaço abaixo do container de imagens */
+    display: flex; /* Usar flexbox para alinhar as imagens no container */
+    justify-content: center; /* Centraliza as imagens horizontalmente */
+    flex-wrap: wrap; /* Permite que as imagens quebrem a linha em telas menores */
 }
 
 .image-container img {
-    display: inline-block;
-    margin: 20px; /* Aumentei as margens entre as imagens */
-    max-width: 50%; /* Permite que as imagens lado a lado sejam maiores */
+    display: block; /* Imagens como blocos para flexbox */
+    margin: 25px; /* Margem entre as imagens */
+    max-width: 48%; /* Ajustado para 2 imagens por linha com margem */
+    /* Para 3 imagens por linha, use max-width: 30%; e ajuste a margem */
     height: auto;
-    border-radius: 10px; /* Bordas mais arredondadas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra um pouco maior */
-    border: 4px solid #66bb6a; /* Borda verde mais grossa */
-    padding: 10px; /* Mais preenchimento interno */
+    border-radius: 15px; /* Bordas mais arredondadas nas imagens do container */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Sombra maior nas imagens do container */
+    border: 5px solid #66bb6a; /* Borda verde mais grossa nas imagens do container */
+    padding: 15px; /* Mais padding dentro da borda da imagem */
+    transition: transform 0.3s ease-in-out; /* Transição suave ao passar o mouse */
 }
 
-.text-block {
+.image-container img:hover {
+    transform: scale(1.03); /* Leve aumento ao passar o mouse */
+}
+
+.text-block { /* Estilo específico para blocos de texto que possam surgir */
     text-align: center;
+    color: #2e7d32;
+    margin-top: 30px;
+    font-size: 1.2em;
+    padding: 15px;
+    background-color: #d4edda; /* Fundo mais claro para blocos de texto */
+    border-radius: 8px;
+}
+
+ul {
+    list-style-type: disc; /* Mantém os marcadores de lista */
+    text-align: left; /* Alinha o texto da lista à esquerda */
+    margin: 25px auto; /* Mais margem e centraliza a lista */
+    padding-left: 40px; /* Mais espaço à esquerda da lista */
+    max-width: 90%; /* Limita a largura da lista para melhor legibilidade */
+}
+
+li {
+    margin-bottom: 12px; /* Mais espaço entre os itens da lista */
+    font-size: 1.1em; /* Itens da lista um pouco maiores */
+    color: #3d8841; /* Cor mais específica para itens da lista */
 }
