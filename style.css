@@ -6,7 +6,7 @@ body {
     margin: 0;
     /* --- INÍCIO DO EFEITO PARALLAX --- */
     background-image: url('agricultura-de-precisao.png');
-    /* Substitua 'fundo-agricultura.jpg' pelo caminho da sua imagem */
+    /* Substitua 'agricultura-de-precisao.png' pelo caminho da sua imagem */
     background-attachment: fixed;
     /* ESSENCIAL para o efeito parallax */
     background-position: center center;

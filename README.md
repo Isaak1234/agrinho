@@ -7,3 +7,4 @@ https://blog.kalatec.com.br/automacao-agricola/
 https://agevolution.canalrural.com.br/mercado-de-robos-agricolas-vai-quadruplicar-em-cinco-anos-diz-estudo/
 https://nutricaodesafras.com.br/biotecnologia-na-agricultura
 https://eos.com/pt/products/crop-monitoring/key-functions/
+https://blog.jacto.com.br/agricultura-de-precisao-como-funciona/
