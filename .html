@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site sem JS (Modo Escuro)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <div class="theme-switcher">
+            <a href="#light-mode" class="button">Modo Claro</a>
+            <a href="#dark-mode" class="button">Modo Escuro</a>
+        </div>
+    </header>
+
+    <main id="content">
+        <div id="light-mode"></div>
+        <div id="dark-mode"></div>
+
+        <p>Este é um parágrafo de exemplo para testar a mudança da paleta de cores.</p>
+        <p>Ao clicar nos botões "Modo Claro" ou "Modo Escuro", a URL mudará, ativando os estilos CSS correspondentes.</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Meu Site. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+     <div class="font-size-controls">
+    <input type="radio" id="font-small" name="font-size" value="small" class="font-radio" checked>
+    <label for="font-small" class="button">Pequena</label>
+
+    <input type="radio" id="font-medium" name="font-size" value="medium" class="font-radio">
+    <label for="font-medium" class="button">Média</label>
+
+    <input type="radio" id="font-large" name="font-size" value="large" class="font-radio">
+    <label for="font-large" class="button">Grande</label>
+</div>

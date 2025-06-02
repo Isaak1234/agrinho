@@ -1,0 +1,179 @@
+/* Estilos Padrão (Modo Claro) */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4; /* Cor de fundo clara */
+    color: #333; /* Cor do texto padrão */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header {
+    background-color: #eee;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.theme-switcher .button {
+    margin-left: 10px;
+    padding: 8px 12px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none; /* Remover sublinhado do link */
+    font-size: 0.9em;
+}
+
+.theme-switcher .button:hover {
+    background-color: #0056b3;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #eee;
+    border-top: 1px solid #ccc;
+}
+
+/* Esconder os divs de target para não ocuparem espaço visual */
+#light-mode, #dark-mode {
+    display: none;
+}
+
+/* Estilos para o Modo Escuro ativado via :target */
+#dark-mode:target ~ #content { /* Aplica os estilos ao main e seus filhos */
+    background-color: #2c2c2c;
+    color: #f1f1f1;
+}
+
+#dark-mode:target ~ #content header {
+    background-color: #333;
+    border-bottom-color: #555;
+    color: #f1f1f1;
+}
+
+#dark-mode:target ~ #content .theme-switcher .button {
+    background-color: #6a0572;
+}
+
+#dark-mode:target ~ #content .theme-switcher .button:hover {
+    background-color: #8c2a95;
+}
+
+#dark-mode:target ~ #content main {
+    background-color: #3a3a3a;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#dark-mode:target ~ #content footer {
+    background-color: #333;
+    border-top-color: #555;
+    color: #f1f1f1;
+}
+
+/* Estilos para o Modo Claro ativado via :target (para resetar se o modo escuro foi ativado) */
+/* Quando o #light-mode é o target, ele "reseta" os estilos, voltando ao padrão */
+#light-mode:target ~ #content {
+    background-color: #f4f4f4; /* Volta para a cor clara */
+    color: #333; /* Volta para a cor do texto padrão */
+}
+
+#light-mode:target ~ #content header {
+    background-color: #eee;
+    border-bottom-color: #ccc;
+    color: #333;
+}
+
+#light-mode:target ~ #content .theme-switcher .button {
+    background-color: #007bff;
+}
+
+#light-mode:target ~ #content .theme-switcher .button:hover {
+    background-color: #0056b3;
+}
+
+#light-mode:target ~ #content main {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#light-mode:target ~ #content footer {
+    background-color: #eee;
+    border-top-color: #ccc;
+    color: #333;
+}
+/* Esconder os radio buttons */
+.font-radio {
+    display: none;
+}
+
+/* Estilos para os labels que atuarão como botões */
+.font-size-controls .button {
+    margin-left: 10px;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+    color: #333;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+.font-size-controls .button:hover {
+    background-color: #e2e2e2;
+}
+
+/* Estilos quando um radio button é selecionado */
+.font-radio:checked + .button {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+/* Aplicação dos tamanhos de fonte */
+#font-small:checked ~ main p { /* Seleciona parágrafos dentro do main */
+    font-size: 0.9em;
+}
+
+#font-medium:checked ~ main p {
+    font-size: 1em; /* Tamanho padrão */
+}
+
+#font-large:checked ~ main p {
+    font-size: 1.1em;
+}
+
+/* Você precisará aplicar isso a outros elementos de texto se quiser: */
+#font-small:checked ~ main,
+#font-small:checked ~ footer,
+#font-small:checked ~ header h1 {
+    font-size: 0.9em;
+}
+
+#font-medium:checked ~ main,
+#font-medium:checked ~ footer,
+#font-medium:checked ~ header h1 {
+    font-size: 1em;
+}
+
+#font-large:checked ~ main,
+#font-large:checked ~ footer,
+#font-large:checked ~ header h1 {
+    font-size: 1.1em;
+}
