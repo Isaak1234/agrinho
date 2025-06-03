@@ -86,7 +86,7 @@ img {
 }
 
 img:hover {
-    transform: scale(1.90); /* Aumenta a imagem em 19% ao passar o mouse */
+    transform: scale(3.0); /* Aumenta a imagem em 30% ao passar o mouse */
 }
 
 .image-container {
@@ -112,7 +112,7 @@ img:hover {
 }
 
 .image-container img:hover {
-    transform: scale(1.90); /* Aumenta as imagens em 19% ao passar o mouse */
+    transform: scale(3.0); /* Aumenta as imagens em 30% ao passar o mouse */
 }
 /* --- FIM DAS MUDANÇAS PARA O EFEITO DE ZOOM --- */
 
