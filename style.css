@@ -86,7 +86,7 @@ img {
 }
 
 img:hover {
-    transform: scale(1.08); /* Aumenta a imagem em 8% ao passar o mouse */
+    transform: scale(1.50); /* Aumenta a imagem em 12% ao passar o mouse */
 }
 
 .image-container {
