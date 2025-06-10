@@ -1,8 +1,6 @@
-# tecnologia-agricola
-==================================
-Apresentando as maquinas e a tecnologia de hoje em dia dentro do campo agricola e pelo o que são responsaveis 
-==================================
-Referencias/fonte:
+# Apresentando as maquinas e a tecnologia de hoje em dia dentro do campo agricola e pelo o que são responsaveis 
+
+# Referencias/fonte:
 https://agroadvance.com.br/blog-guia-da-agricultura-de-precisao/
 https://blog.climatefieldview.com.br/drones-agricultura
 https://geoinova.com.br/utilizacao-das-imagens-de-satelite-na-agricultura/
